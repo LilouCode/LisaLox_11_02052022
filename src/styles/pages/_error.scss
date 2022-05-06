@@ -1,0 +1,23 @@
+.error{
+    @include section;
+    color: $color-primary;
+    text-align: center;
+    margin-bottom: 5%;
+    & h1{
+        font-size: 288px;
+        font-weight: $bold;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    & h2{
+        font-size: 36px;
+        margin-top: 2%;
+        margin-bottom: 5%;
+    }
+    & a{
+        margin-top: 4%;
+        margin-bottom: 3%;
+        font-size: 18px;
+        color: $color-primary;
+    }
+}
