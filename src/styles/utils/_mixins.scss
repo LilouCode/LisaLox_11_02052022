@@ -1,0 +1,8 @@
+@mixin banner {
+    margin-left: $paddingBody;
+    margin-right: $paddingBody;
+    border-radius: 25px;
+    width: 90%;
+    font-size: 1.3em;
+    object-fit: cover;
+}

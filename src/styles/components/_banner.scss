@@ -1,0 +1,11 @@
+.banner{
+    @include banner;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    height: 223px;
+    background-color: (rgba(0, 0, 0, 0.721));
+    background-image:url(../../assets/bannerHome.png) no-repeat;
+    
+}
