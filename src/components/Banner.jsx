@@ -1,10 +1,6 @@
 import '../styles/main.scss';
-function Banner() {
-    return (
-      <div className="banner">
-        <h1>Chez vous, partout et ailleurs</h1>
-      </div>
-    )
+function Banner({ children }) {
+    return <div className="banner">{children}</div>
   }
   
   export default Banner
