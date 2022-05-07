@@ -5,7 +5,12 @@
     align-items: center;
     color: $white;
     height: 223px;
-    background-color: (rgba(0, 0, 0, 0.3));
-    background-image:url(../../assets/bannerHome.png) no-repeat;
-    
+    background: rgba(0, 0, 0, 0.3);
+    & img{
+        position: absolute;
+        height: 223px;
+        width: 90%;
+        border-radius: 25px;
+        z-index: -1;
+    }  
 }

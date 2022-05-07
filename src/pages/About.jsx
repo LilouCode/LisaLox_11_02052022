@@ -1,7 +1,8 @@
+import Banner from "../components/Banner"
 function About() {
     return (
       <div>
-        <h1> Travels makes people happier</h1>
+        <Banner/>
       </div>
     )
   }
