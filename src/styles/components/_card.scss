@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 340px;
+    height: 340px;
+    & img{
+        position: relative;
+        width: 340px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    & h2{ // carefull with the grid style (<a>)
+        position: absolute;
+        padding: 1%;
+        width: 200px    ;
+        font-size: 18px;
+        font-weight: $medium;
+        
+    }
+}
