@@ -11,5 +11,13 @@
         margin-top: 3%;
         margin-right: 2%;
         margin-left: 2%;
+        & :hover{
+            color: $color-primary;
+        }
+        &:hover div{
+            box-shadow: 10px 10px 22px 0px rgba(209,205,205,0.62);
+            -webkit-box-shadow: 10px 10px 22px 0px rgba(209,205,205,0.62);
+            -moz-box-shadow: 10px 10px 22px 0px rgba(209,205,205,0.62);
+        }
     }
 }
