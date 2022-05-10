@@ -1,0 +1,32 @@
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    width: 582px;
+    font-size: 24px;
+    font-weight: $regular;
+    background-color: $grey;
+    margin-bottom: 2%;
+    & button{
+        background-color: $color-primary;
+        color: $white;
+        font-size: 24px;
+        font-weight: $medium;
+        border: none;
+        text-align: left;
+        padding: 0.5% 0.5% 0.5% 1%;
+        border-radius: 5px ;
+    }
+    & p{
+        padding: 0 2%;
+        color: $color-primary;
+    }
+    &--open{
+        background: url(../../assets/arrow--open.svg) no-repeat right;
+    }
+    &--closed{
+        background: url(../../assets/arrow--close.svg) no-repeat right;
+    }
+    &--large{
+        width: 1023px;
+    }
+}

@@ -2,8 +2,8 @@ import {useState} from 'react'
 function Dropdown (props){
     const [isOpen, setIsOpen] = useState(false)
     return isOpen? (
-        <div>
-            <button onClick={() => setIsOpen(false)}>
+        <div className={props.className}>
+            <button className='dropdown--closed' onClick={() => setIsOpen(false)}>
                 {props.title}
             </button>
             <div>
@@ -11,8 +11,8 @@ function Dropdown (props){
             </div>
         </div>
     ): (
-        <div>
-            <button onClick={() => setIsOpen(true)}>
+        <div className={props.className}>
+            <button className='dropdown--open' onClick={() => setIsOpen(true)}>
                 {props.title}
             </button>
         </div>
