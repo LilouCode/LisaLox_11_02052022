@@ -1,0 +1,40 @@
+.rental{
+    &__section{
+       display: flex;
+       justify-content: space-between; 
+       color: $color-primary;
+    }
+    &__title{
+        font-size: 36px;
+        font-weight: $medium;
+        margin-bottom: 0%;
+    }
+    &__subtitle{
+        margin-top: 1%;
+        font-size: 18px;
+    }
+
+    &__details{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__tags{
+        display: flex;
+    }
+
+}
+.host{
+    display: flex;
+    align-self: flex-end;
+    &__name{
+        font-size: 18px;
+        width: 93px;
+    }
+    &__picture{
+        height: 64px;
+        width: 64px;
+        object-fit: cover;
+        border-radius: 100px;
+    }
+}

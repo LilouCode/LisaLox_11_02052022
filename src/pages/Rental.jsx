@@ -14,20 +14,20 @@ function Rental (){
     rental = rentalId[0]
     console.log(rental)
     return(
-        <div>
+        <section className="rental section">
             <Carrousel/>
-            <div>
+            <div className="rental__section">
                 <div>
-                    <h1>{rental.title}</h1>
-                    <h2>{rental.location}</h2>
+                    <h1 className="rental__title">{rental.title}</h1>
+                    <h2 className="rental__subtitle">{rental.location}</h2>
                 </div>
-                <div>
-                    <h3>{rental.host.name}</h3>
-                    <img src={rental.host.picture} alt={rental.host.name} />
+                <div className="host">
+                    <h3 className="host__name">{rental.host.name}</h3>
+                    <img className="host__picture" src={rental.host.picture} alt={rental.host.name} />
                 </div>
             </div>
-            <div>
-                <div>
+            <div className="rental__section">
+                <div className="rental__tags">
                     {rental.tags?.map((tag) => (
                         <Tag key={tag + id} text= {tag}/>
                     ))}
@@ -35,16 +35,16 @@ function Rental (){
                 <Rate className = {"stars--" + rental.rating}/>
             </div>
 
-            <div>
-                <Dropdown title ="Description" description={rental.description}/>
-                <Dropdown title= "Équipements" description= {<ul>
+            <div className="rental__details">
+                <Dropdown className= "dropdown" title ="Description" description={rental.description}/>
+                <Dropdown className= "dropdown" title= "Équipements" description= {<ul>
                     {rental.equipments?.map((equipment) =>(
                     <li key={rental.id + equipment}>{equipment}</li>
                 ))}
                 </ul>}/>
             </div>
             
-        </div>
+        </section>
     )
 }
 export default Rental

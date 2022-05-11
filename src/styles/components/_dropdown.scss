@@ -18,9 +18,14 @@
         border-radius: 5px ;
         cursor: pointer;
     }
-    & p{
+    & h5{
+        font-size: 18px;
+        font-weight: $regular;
         padding: 0 2%;
         color: $color-primary;
+    }
+    & ul{
+        list-style: none;
     }
     &--open{
         background: url(../../assets/arrow--open.svg) no-repeat right;
