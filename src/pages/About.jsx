@@ -7,7 +7,7 @@ function About() {
       <Banner>
         <img src={banenrAbout} alt="paysage nature" />
       </Banner>
-      <section>
+      <section className="center">
       <Dropdown
         className="dropdown dropdown--large"
         title="Fiabilité"
