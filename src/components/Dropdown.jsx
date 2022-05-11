@@ -7,7 +7,7 @@ function Dropdown (props){
                 {props.title}
             </button>
             <div>
-                <p>{props.description}</p>
+                <h5>{props.description}</h5>
             </div>
         </div>
     ): (
