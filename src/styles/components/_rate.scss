@@ -1,0 +1,22 @@
+.stars{
+    width: 196px;
+    height: 36px;
+    &--0{
+        background-image: url(../../assets/stars_0.svg)
+    }
+    &--1{
+        background-image: url(../../assets/stars_1.svg)
+    }
+    &--2{
+        background-image: url(../../assets/stars_2.svg)
+    }
+    &--3{
+        background-image: url(../../assets/stars_3.svg)
+    }
+    &--4{
+        background-image: url(../../assets/stars_4.svg)
+    }
+    &--5{
+        background-image: url(../../assets/stars_5.svg)
+    }
+}
