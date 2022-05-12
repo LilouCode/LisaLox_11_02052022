@@ -2,16 +2,20 @@
     &__section{
        display: flex;
        justify-content: space-between; 
+       flex-wrap: wrap;
        color: $color-primary;
     }
-    &__title{
-        font-size: 36px;
-        font-weight: $medium;
-        margin-bottom: 0%;
-    }
-    &__subtitle{
-        margin-top: 1%;
-        font-size: 18px;
+    &__heading{
+        flex: 70%;
+        &__title{
+            font-size: 36px;
+            font-weight: $medium;
+            margin-bottom: 0%;
+        }
+        &__subtitle{
+            margin-top: 1%;
+            font-size: 18px;
+        }
     }
 
     &__details{

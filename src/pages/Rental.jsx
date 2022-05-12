@@ -17,22 +17,20 @@ function Rental (){
         <section className="rental section">
             <Carrousel pics={rental.pictures} alt={rental.title +" "+ rental.location}/>
             <div className="rental__section">
-                <div>
-                    <h1 className="rental__title">{rental.title}</h1>
-                    <h2 className="rental__subtitle">{rental.location}</h2>
+                <div className="rental__heading">
+                    <h1 className="rental__heading rental__heading__title">{rental.title}</h1>
+                    <h2 className="rental__heading rental__heading__subtitle">{rental.location}</h2>
                 </div>
                 <div className="host">
                     <h3 className="host__name">{rental.host.name}</h3>
                     <img className="host__picture" src={rental.host.picture} alt={rental.host.name} />
                 </div>
-            </div>
-            <div className="rental__section">
                 <div className="rental__tags">
                     {rental.tags?.map((tag) => (
                         <Tag key={tag + id} text= {tag}/>
                     ))}
                 </div>
-                <Rate className = {"stars--" + rental.rating}/>
+                <Rate className = {"rental__stars stars--" + rental.rating}/>
             </div>
 
             <div className="rental__details">
