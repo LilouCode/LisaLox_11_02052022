@@ -15,7 +15,7 @@ function Rental (){
     console.log(rental)
     return(
         <section className="rental section">
-            <Carrousel/>
+            <Carrousel pics={rental.pictures} alt={rental.title +" "+ rental.location}/>
             <div className="rental__section">
                 <div>
                     <h1 className="rental__title">{rental.title}</h1>
