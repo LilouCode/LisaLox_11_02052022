@@ -13,11 +13,11 @@
         font-weight: $medium;
     }
     &__btn{
-        height: 119px;
+        height: 430px;
         width: 96px;
         position: absolute;
-        top: 50%;
         border: none;
+        cursor: pointer;
         &__next{
             right: 5%;
             background: url(../../assets/arrow-next.svg) no-repeat center;
