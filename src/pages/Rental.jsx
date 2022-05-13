@@ -34,8 +34,8 @@ function Rental (){
             </div>
 
             <div className="rental__details">
-                <Dropdown className= "dropdown" title ="Description" description={rental.description}/>
-                <Dropdown className= "dropdown" title= "Équipements" description= {<ul>
+                <Dropdown className= "rental__details__dropdown dropdown" title ="Description" description={rental.description}/>
+                <Dropdown className= "rental__details__dropdown dropdown" title= "Équipements" description= {<ul>
                     {rental.equipments?.map((equipment) =>(
                     <li key={rental.id + equipment}>{equipment}</li>
                 ))}
