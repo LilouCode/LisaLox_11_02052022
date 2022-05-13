@@ -19,5 +19,8 @@
         text-decoration: none;
         color: $color-primary;
         font-size: 24px;
+        &:hover{
+            color: lighten($color: $color-primary, $amount: 5%);
+        }
     }
 }
