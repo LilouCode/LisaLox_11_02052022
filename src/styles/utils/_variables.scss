@@ -11,7 +11,11 @@ $medium: 500;
 $regular:400; 
 $bold: 700;
 
-//Body
+//Margin & paddind
 $paddingBody: 5%;
 $marginRight: 15%;
 $marginBottom: 2%;
+
+//Shadows
+$shadowSimple: 10px 10px 22px 0px rgba(209,205,205,0.62);
+$shadowStrong: 10px 10px 22px 0px rgba(209,205,205,0.8);
