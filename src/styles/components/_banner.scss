@@ -8,9 +8,13 @@
     background: rgba(0, 0, 0, 0.3);
     & img{
         position: absolute;
+        object-fit: cover;
         height: 223px;
         width: 90%;
         border-radius: 25px;
         z-index: -1;
+    }
+    & h1 {
+        padding: 2%;
     }  
 }
