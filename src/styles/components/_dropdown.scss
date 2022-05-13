@@ -3,25 +3,26 @@
     flex-direction: column;
     justify-content: center;
     width: 40%;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: $regular;
     background-color: $grey;
     margin-bottom: 2%;
     & button{
         background-color: $color-primary;
         color: $white;
-        font-size: 24px;
+        height: 52px;
+        font-size: 18px;
         font-weight: $medium;
         border: none;
         text-align: left;
-        padding: 0.5% 0.5% 0.5% 1%;
+        padding: 0.5% 0.5% 0.5% 3%;
         border-radius: 5px ;
         cursor: pointer;
     }
     & h5{
         font-size: 18px;
         font-weight: $regular;
-        padding: 0 2%;
+        padding: 0 3%;
         color: $color-primary;
     }
     & ul{
@@ -35,5 +36,9 @@
     }
     &--large{
         width: 80%;
+        font-size: 24px;
+        & button{
+            font-size: 24px;
+        }
     }
 }
