@@ -8,3 +8,17 @@
     font-size: 1.3em;
     object-fit: cover;
 }
+
+// medias queries
+
+@mixin tablette-only {
+    @media screen and (max-width: map-get($breakpoints, tablette)) {
+      @content;
+    }
+  }
+  
+  @mixin under-small {
+    @media screen and (max-width: map-get($breakpoints, small-screen)){
+      @content;
+    }
+  }
