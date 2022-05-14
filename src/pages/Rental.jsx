@@ -14,9 +14,9 @@ function Rental (){
     rental = rentalId[0]
     console.log(rental)
     return(
-        <section className="rental section">
+        <section className="section">
             <Carrousel pics={rental.pictures} alt={rental.title +" "+ rental.location}/>
-            <div className="rental__section">
+            <div className="rental">
                 <div className="rental__heading">
                     <h1 className="rental__heading rental__heading__title">{rental.title}</h1>
                     <h2 className="rental__heading rental__heading__subtitle">{rental.location}</h2>

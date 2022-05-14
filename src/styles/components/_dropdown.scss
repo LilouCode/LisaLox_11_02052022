@@ -7,6 +7,10 @@
     font-weight: $regular;
     background-color: $grey;
     margin-bottom: 2%;
+    @include under-small{
+        width: 80%;
+        margin-bottom: 13%;
+    }
     & button{
         background-color: $color-primary;
         color: $white;
@@ -18,12 +22,19 @@
         padding: 0.5% 0.5% 0.5% 3%;
         border-radius: 5px ;
         cursor: pointer;
+        @include under-small{
+            font-size: 13px;
+            height: 30px;
+        }
     }
     & h5{
         font-size: 18px;
         font-weight: $regular;
         padding: 0 3%;
         color: $color-primary;
+        @include under-small{
+            font-size: 12px;
+        }
     }
     & ul{
         list-style: none;
