@@ -6,10 +6,13 @@
     align-items: center;
     background-color: $black;
     color: $white;
-    & img{
-        width: 122px;
-    }
     bottom: 0px;
     left: 0px;
     right: 0px;
+    @include under-small{
+        font-size: 12px;
+    }
+    & img{
+        width: 122px;
+    }
 }
