@@ -6,6 +6,9 @@
     justify-content: space-between;
     color: $color-primary;
     align-items: center;
+    @include under-small{
+        padding: 3%;
+    }
     & img{
         width: 210px;
         @include under-small{
@@ -16,6 +19,9 @@
         width: 250px;
         display: flex;
         justify-content: center;
+        @include under-small{
+            width: 40%;
+        }
     }
     & a{
         margin: 5%;
@@ -24,6 +30,8 @@
         font-size: 24px;
         @include under-small{
             font-size: 12px;
+            width: auto;
+            margin: 0 5%;
         }
         &:hover{
             color: lighten($color: $color-primary, $amount: 5%);

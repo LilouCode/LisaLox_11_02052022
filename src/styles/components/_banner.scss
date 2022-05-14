@@ -6,6 +6,9 @@
     color: $white;
     height: 223px;
     background: rgba(0, 0, 0, 0.3);
+    @include under-small{
+        height: 111px;
+    }
     & img{
         position: absolute;
         object-fit: cover;
@@ -13,8 +16,17 @@
         width: 90%;
         border-radius: 25px;
         z-index: -1;
+        @include under-small{
+            height: 111px;
+        }
     }
     & h1 {
+        font-size: 48px;
+        font-weight: $medium;
         padding: 2%;
+        @include under-small{
+            font-size: 24px;
+            padding-right: 30%;
+        }
     }  
 }
