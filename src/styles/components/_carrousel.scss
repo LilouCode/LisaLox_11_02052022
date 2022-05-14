@@ -22,8 +22,12 @@
         position: absolute;
         border: none;
         cursor: pointer;
+        @include tablette-only{
+            width: 50px;
+        }
         @include under-small{
             height: 255px;
+            width: 24px;
         }
         &__next{
             right: 5%;
