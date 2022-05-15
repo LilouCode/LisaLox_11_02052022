@@ -1,6 +1,6 @@
 function Rate(props) {
     return(
-        <button className={"stars " + props.className} ></button>
+       <img src={props.src} alt={props.alt} className="star"/>
     )
 }
 export default Rate

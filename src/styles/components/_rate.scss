@@ -1,24 +1,14 @@
-.stars{
-    width: 196px;
+.star{
+    width: 36px;
     height: 36px;
-    background-color: transparent;
-    border: none;
-    &--0{
-        background-image: url(../../assets/stars_0.svg)
+    margin-right: 2px;
+    @include tablette-only{
+        width: 24px;
+        height: 24px;
     }
-    &--1{
-        background-image: url(../../assets/stars_1.svg)
+    @include under-small{
+        width: 18px;
+        height: 18px;
     }
-    &--2{
-        background-image: url(../../assets/stars_2.svg)
-    }
-    &--3{
-        background-image: url(../../assets/stars_3.svg)
-    }
-    &--4{
-        background-image: url(../../assets/stars_4.svg)
-    }
-    &--5{
-        background-image: url(../../assets/stars_5.svg)
-    }
+    
 }
