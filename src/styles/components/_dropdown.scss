@@ -8,7 +8,7 @@
     background-color: $grey;
     margin-bottom: 2%;
     @include under-small{
-        width: 80%;
+        width: 100%;
         margin-bottom: 13%;
     }
     & button{
@@ -45,11 +45,18 @@
     &--closed{
         background: url(../../assets/arrow--close.svg) no-repeat right;
     }
-    &--large{
-        width: 80%;
+}
+.dropdown--large{
+    width: 80%;
+    font-size: 24px;
+    @include under-small{
+        width: 100%;
+        font-size: 12px;
+    }
+    & button{
         font-size: 24px;
-        & button{
-            font-size: 24px;
+        @include under-small{
+            font-size: 13px;
         }
     }
 }

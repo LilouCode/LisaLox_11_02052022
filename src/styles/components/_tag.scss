@@ -9,4 +9,12 @@
     text-align: center;
     padding: 1% 0 0 0;
     margin-right: 2%;
+    @include tablette-only{
+        font-size: 10px;
+        border-radius: 10px;
+        width: 84px;
+        height: 18px;
+        padding: 2% 0 0 0;
+        margin-bottom: 0;
+    }
 }

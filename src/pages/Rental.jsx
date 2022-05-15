@@ -41,12 +41,14 @@ function Rental (){
                         <Tag key={tag + id} text= {tag}/>
                     ))}
                 </div>
+                <div className="rating">
                 {fill?.map((i) => (
                     <Rate key={"fill"+i} src= {starFill}/>
                 ))}
                 {empty?.map((i) => (
                     <Rate key={"empty"+i} src= {starEmpty}/>
                 ))}
+                </div>
             </div>
 
             <div className="rental__details">

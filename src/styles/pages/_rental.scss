@@ -4,20 +4,21 @@
   flex-wrap: wrap;
   color: $color-primary;
   margin-bottom: 1%;
+  position: relative;
   &__heading {
     width: 85%;
     &__title {
       font-size: 36px;
       font-weight: $medium;
       margin-bottom: 0%;
-      @include under-small {
+      @include tablette-only {
         font-size: 18px;
       }
     }
     &__subtitle {
       margin-top: 1%;
       font-size: 18px;
-      @include under-small {
+      @include tablette-only {
         font-size: 12px;
       }
     }
@@ -25,8 +26,9 @@
   &__tags {
     display: flex;
     flex: 70%;
-    @include under-small {
+    @include tablette-only {
       flex-wrap: wrap;
+      flex: 100%;
     }
   }
   &__details {
@@ -39,20 +41,26 @@
       flex-direction: column;
       height: auto;
       min-height: 100px;
+      align-items: center;
     }
   }
 }
 
 .host {
   display: flex;
-  align-self: flex-end;
+  position: absolute;
+  right: 5px;
+  top: 25px;
   @include under-small{
+    position: relative;
+    right: auto;
+    top: auto;
     order: 4;
   }
   &__name {
     font-size: 18px;
     width: 93px;
-    @include under-small {
+    @include tablette-only {
       font-size: 12px;
     }
   }
@@ -61,7 +69,7 @@
     width: 64px;
     object-fit: cover;
     border-radius: 100px;
-    @include under-small {
+    @include tablette-only {
       height: 32px;
       width: 32px;
     }

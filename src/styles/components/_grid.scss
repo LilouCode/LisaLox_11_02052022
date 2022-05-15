@@ -27,5 +27,8 @@
             -webkit-box-shadow: $shadowSimple;
             -moz-box-shadow: $shadowSimple;
         }
+        @include under-small{
+            margin-bottom: 3%;
+        }
     }
 }
