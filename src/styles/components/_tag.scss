@@ -9,6 +9,7 @@
     text-align: center;
     padding: 1% 0 0 0;
     margin-right: 2%;
+   
     @include tablette-only{
         font-size: 10px;
         border-radius: 10px;
@@ -16,5 +17,12 @@
         height: 18px;
         padding: 2% 0 0 0;
         margin-bottom: 0;
+    }
+
+    &--XL{
+        width: 140px;
+        @include tablette-only{
+            width: 110px;
+        }
     }
 }
