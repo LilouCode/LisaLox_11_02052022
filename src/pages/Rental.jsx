@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom";
-import {rentalsList} from "../datas/rentalsList"
+import { useParams, Navigate } from "react-router-dom";
+import {rentalsList} from "../datas/rentalsList";
 import Carrousel from "../components/Carrousel";
 import Dropdown from '../components/Dropdown';
 import Rate from "../components/Rate";
@@ -14,17 +14,23 @@ function Rental (){
         (rentals) => rentals.id.includes(id)
     );
     rental = rentalId[0]
-    console.log(rental)
     let fill = [];
+    let empty = [];
+    console.log("rental= "+rental)
+    if (!rental === undefined){
+        
     for (let i = 0; i< rental.rating; i++){
         fill.push(i)
     }
-    let empty = [];
+    
     const noRate = 5 - rental.rating;
     for (let i= 0; i< noRate; i++){
         empty.push(i)
     }
+    }
     return(
+        rental === undefined?
+        <Navigate replace to="*" />:
         <section className="section">
             <Carrousel pics={rental.pictures} alt={rental.title +" "+ rental.location}/>
             <div className="rental">
